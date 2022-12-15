@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap'); 
+
+:root {
+    --grey: #3E3D3D;
+    --red: #D70D21;
+    --darkgrey: #191919;
+    --black: #000000;
+    --lightgrey: #F1F3F4;
+    
+
+}
+
+h1{ 
+    color:black;
+   
+    font-weight: bolder;
+    font-size: 55px;
+    font-family: 'Eczar', serif;
+   
+
+}
+
+h2 {
+
+    color:black;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    
+
+}
+
+h3 {
+
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5% 0;
+
+}
+
+p {
+    margin: 10px 0 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+
+/**media query**/
+@media(max-width: 800px){
+
+    h1{
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

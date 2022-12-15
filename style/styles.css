@@ -1,0 +1,337 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Tenor+Sans&display=swap'); 
+
+@import 'constants.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+
+button {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: var(--red);
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 44px;
+  line-height: 1.15;
+  margin: 12px 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 40%;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.action-btn {
+    display: inline;
+}
+
+
+
+
+  
+ 
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    min-height: 30vh;
+    width: 100%;
+    position: relative;
+    /* background-image: url(/assets/hero-banner.png); */
+  
+    margin: 0 auto;
+   
+    
+
+}
+
+.header-image {
+    /* background-image: url("https://img.freepik.com/premium-vector/two-arab-business-men-politicians-conference-debate-meeting-interview-talking-world-map-front-big-audience-horizontal-illustration_48369-18184.jpg?w=1380");
+    width: 50%; */
+    height: 300px;
+    margin: 0 auto;
+    background-size: cover;
+    object-fit: contain;
+}
+
+.row-register {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.register-col1 {
+    width: 60%;
+    color: white;
+
+ 
+    padding: 4%;
+    background-color: black;
+}
+
+
+
+
+.register-col2 {
+   background-image: url("/assets/register-img.png");
+   width: 40%;
+ 
+   justify-content: right;
+   object-fit: contain;
+}
+
+.register-content {
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.register-content h2,
+.register-content h3,
+.register-content p {
+    color: white;
+}
+
+.container-register{
+    padding: 3%;
+    max-width: 100%;
+    background-color: #F1F3F4;
+}
+
+
+
+
+
+.mySlides {display: none;}
+
+
+
+/**Header banner**/
+
+.carousel-cell{
+    width: 100%;
+    height: 100vh;
+  
+    
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+ 
+.hero-banner {
+    
+    width: 100%;
+    height: 60vh;
+    margin: 0 auto;
+ 
+    padding: 4%;
+    position: relative;
+    background-color: white;
+   
+   text-align: center;
+ 
+  
+   
+ 
+    
+   
+
+} 
+
+
+
+.hero-container {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border: 2px solid #F1F3F4;
+    padding: 0px;
+    border-radius: 25px 25px 0 0;
+    background-color: #F1F3F4;
+}
+
+.hero-banner h1 {
+   
+    margin: 0 auto;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 80px;
+    
+}
+
+.hero-banner span {
+    font-family: 'Archivo Black', sans-serif;
+
+}
+
+.hero-banner p {
+
+ 
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 30px;
+
+}
+
+.hero-banner h2 {
+  
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 50px;
+ 
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+nav .fa {
+    display: none;
+}
+/**media query**/
+@media(max-width: 800px){
+    html,body {
+        overflow-x: hidden;
+    }
+    /**header content**/
+    header {
+        height: auto;
+        text-align: center;
+        
+        
+    }
+
+    .carousel-cell {
+        max-width: auto;
+        height: 100%;
+        margin: 20px;
+        background-size: contain;
+        
+      
+    }
+
+    .header-image {
+        width: 80%;
+    }
+
+    .hero-banner {
+        height: 50vh;
+        width: 80%;
+        text-align: center;
+        padding-top: 10%;
+       
+    }
+
+  
+
+    .hero-banner h1{
+        font-size: 30px;
+    }
+
+    .hero-banner h2{
+        font-size: 20px;
+      
+    }
+    .hero-banner p{
+        font-size: 15px;
+       
+    }
+
+    .register-col1 {
+        width: 99%;
+      
+        
+    }
+    .register-col2 {
+        width: 99%;
+        height: 200px;
+    }
+
+    .register-content {
+        width: 80%;
+        padding: 10%;
+     
+    }
+
+    button {
+        width: 100%;
+    }
+
+   
+
+    .btn-grad {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 12px;
+        padding: 12px 21px; 
+    }
+
+    
+
+    .carousel-cell {
+        width: 100%;
+        height: 200px;
+        margin: 0 10px;
+        background-size: cover;
+        
+      
+    }
+
+   
+    
+   
+    
+   
+}
+
+
+
+
+
+
